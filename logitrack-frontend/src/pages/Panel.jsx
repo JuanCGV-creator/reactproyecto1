@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Productos from './Productos';
+import Ejemplos from './Ejemplos';
 
 const Panel = ({ usuario, onLogout }) => {
   // Estado para controlar qué vista se muestra
@@ -96,9 +97,15 @@ const Panel = ({ usuario, onLogout }) => {
           <li onClick={() => setVistaActual('configuracion')} style={estiloItemMenu('configuracion')}>
             <span>⚙️</span> Configuración
           </li>
+
+           <li onClick={() => setVistaActual('ejemplos')} style={estiloItemMenu('ejemplos')}>
+            <span>📚</span> Ejemplos Técnicos
+          </li>
+
+
         </ul>
 
-        <div style={{ padding: '20px' }}>
+          <div style={{ padding: '20px' }}>
           <button onClick={onLogout} style={{ width: '100%', padding: '12px', backgroundColor: '#e74c3c', color: 'white', border: 'none', borderRadius: '6px', cursor: 'pointer', fontWeight: 'bold' }}>
             Cerrar Sesión
           </button>
@@ -138,6 +145,7 @@ const Panel = ({ usuario, onLogout }) => {
         {vistaActual === 'usuarios' && <SeccionPlaceholder titulo="🛡️ Control de Usuarios" />}
         {vistaActual === 'reportes' && <SeccionPlaceholder titulo="📊 Reportes del Sistema" />}
         {vistaActual === 'configuracion' && <SeccionPlaceholder titulo="⚙️ Configuración" />}
+        {vistaActual === 'ejemplos' && <Ejemplos />}
 
       </main>
     </div>
