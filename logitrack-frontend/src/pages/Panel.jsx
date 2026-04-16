@@ -163,7 +163,7 @@ const SeccionPlaceholder = ({ titulo }) => (
   <div style={{ padding: '40px', textAlign: 'center' }}>
     <h2 style={{ color: '#2c3e50' }}>{titulo}</h2>
     <div style={{ marginTop: '30px', padding: '50px', border: '2px dashed #ccc', borderRadius: '15px', backgroundColor: '#fff' }}>
-      <p style={{ color: '#7f8c8d', fontSize: '18px' }}>Módulo en desarrollo para LogiTrack.</p>
+      <p style={{ color: '#7f8c8d', fontSize: '18px' }}>Módulo en desarrollo para LogiTrackV2.</p>
       <small>Próximamente: Conexión con las tablas correspondientes en MySQL.</small>
     </div>
   </div>

@@ -43,7 +43,7 @@ const SaludoFuncional = () => {
 const Ejemplos = () => {
   return (
     <div style={{ padding: '40px' }}>
-      <h1 style={{ color: '#333' }}>📚 Repositorio de Ejemplos Técnicos</h1>
+      <h1 style={{ color: '#333' }}>📚 Repositorio de Ejemplos Técnicos Varios</h1>
       <p style={{ color: '#666', marginBottom: '30px' }}>
         Esta sección sirve para comparar las dos formas principales de crear componentes en React.
       </p>
